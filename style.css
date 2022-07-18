@@ -1,0 +1,171 @@
+/************** general **********/
+*{
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
+  text-decoration: none;
+}
+body{
+  background-color: white;
+}
+.container{
+  max-width: 900px;
+  margin:auto;
+  background-color:  #0047b3
+}
+/************** HEADER************** */
+header{
+  text-align: center;
+  background-color:#80b3ff;
+}
+.logo-container img{
+  border-radius: 10px;
+  margin: 5px;
+}
+
+/************** NAVIGATOR **************/
+nav{
+  background-color:#3385ff;
+  text-align: center;
+}
+
+li{
+  margin:15px;
+  display: inline-block;
+  font-size: 25px;
+}
+
+li a{
+  text-decoration: none;
+  color:white;
+}
+
+nav input{
+  float: right;
+  border-radius: 5px;
+}
+nav h6{
+  float: right;
+  font-size: 20px;
+  color: white;
+}
+nav .clearfix{
+  content: "";
+  clear:both;
+  display: table;
+}
+/* ************* GALLERY **************/
+.main-content{
+  background-image:url(images/sfondomain.png);
+}
+#gallery{
+  padding:15px;
+}
+#gallery img{
+  width: 100%;
+  height: 300px;
+  border: 2px solid white;
+}
+.caption{
+  /* height: 100px; */
+}
+#gallery .item{
+  float: left;
+  width: 50%;
+  padding: 15px;
+  color: white;
+}
+
+  .clearfix::after{
+    content: "";
+    clear:both;
+    display: table;
+  }
+
+  hr{
+    height: 50px;
+  }
+  main h3{
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-style:italic;
+    color: white;
+    text-decoration: none;
+  }
+  #gallery .picture{
+    line height: 0;
+  }
+
+/* ******FOOTER****** */
+.main{
+  background-image: url(images/sfondofoot.png);
+}
+.social-wrap{
+  padding: 10px;
+  width:100%;
+  clear: right;
+  background-image: url(images/sfondofoot.png);
+  clear: right;
+}
+h6{
+  float: left;
+  font-size: 15px;
+  color: white;
+
+}
+.copy{
+  width: 100px;
+  height: 100px;
+  float: left;
+}
+span{
+  font-size: 15px;
+  color: white;
+}
+footer img{
+  height: 50px;
+  float: left;
+  margin:5px;
+  border-radius: 10px;
+}
+.info{
+  margin-right: 20px;
+  margin-left: 5px;
+  float: right;
+  color: white;
+}
+.footer-contatti, .logo-foot{
+  float: right;
+}
+/* *******MEDIA QUERIES******* */
+
+@media only screen and (min-width:768px) {
+  /* ************* GALLERY **************/
+  #gallery .item{
+    width: 33.3333%;
+  }
+
+  #gallery .item:nth-child(3n+1){
+    clear: left;
+
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  li a {
+    transition: opacity 0.5s;
+  }
+  li a:hover{
+    opacity: 0.7;
+    background: #453aa1;
+    border-radius: 5px;
+
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #gallery .item:nth-child(2n+1){
+    clear: left;
+
+  }
+}
